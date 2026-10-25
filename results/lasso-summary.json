@@ -1,0 +1,18 @@
+{
+  "cross_validation_folds": 5,
+  "lambda_min": {
+    "selected_original_variables": 31
+  },
+  "lambda_1se": {
+    "selected_original_variables": 16
+  },
+  "selected_for_downstream_analysis": [
+    "听力等级",
+    "自评健康等级",
+    "日常活动受限等级",
+    "CESD-10 得分",
+    "腰围",
+    "睡眠时长"
+  ]
+}
+
