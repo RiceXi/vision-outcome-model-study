@@ -1,0 +1,33 @@
+{
+  "data": {
+    "minimum_age": 65,
+    "analysis_sample": 7661,
+    "positive_outcome": 1022,
+    "positive_rate": 0.1334,
+    "train_sample": 6128,
+    "test_sample": 1533,
+    "continuous_variables": 4,
+    "categorical_variables": 33
+  },
+  "outcome_definition": "eyesight_close == 4 OR eyesight_distance == 4",
+  "variable_selection": {
+    "univariate_significant": 31,
+    "lasso_lambda_1se_variables": 16,
+    "univariate_lasso_intersection": 14,
+    "final_multivariable_variables": 6
+  },
+  "resampling": {
+    "method": "SMOTENC",
+    "train_before": 6128,
+    "train_after": 10622,
+    "positive_after": 5311,
+    "negative_after": 5311
+  },
+  "best_model": {
+    "name": "Logistic Regression",
+    "test_auc": 0.7931,
+    "auc_bootstrap_95ci": [0.7575, 0.8316],
+    "brier_after_sigmoid_calibration": 0.0913
+  }
+}
+
