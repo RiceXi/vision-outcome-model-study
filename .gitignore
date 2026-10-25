@@ -1,0 +1,25 @@
+# Raw and potentially identifying data must never be committed.
+data/
+raw/
+*.csv
+!results/*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# Private files and local environment.
+.env
+.env.*
+*.pdf
+*.docx
+*.zip
+work/
+
+# Local and editor files.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+
